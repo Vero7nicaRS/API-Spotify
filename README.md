@@ -15,24 +15,24 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # -----------
 
 1. Crear un entorno virtual (recomendado)
-----------------------------------------
+
 python -m venv venv
 
-3. Activarlo
-----------------------------------------
+2. Activarlo
+
 venv\Scripts\activate
 
 3. Instalar dependencias
-----------------------------------------
+
 pip install -r requirements.txt
 
 4. Configurar variables de Spotify
-----------------------------------------
+
 SPOTIFY_CLIENT_ID= ...
 SPOTIFY_CLIENT_SECRET= ...
 
 5. Ejecutarlo
-----------------------------------------  
+
 python app.py
 
 Se obtiene como resultado: http://127.0.0.1:5000/
