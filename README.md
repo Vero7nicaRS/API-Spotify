@@ -13,9 +13,11 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # -----------
 # INSTALACIÓN
 # -----------
+
 1. Crear un entorno virtual (recomendado)
 ----------------------------------------
 python -m venv venv
+
 2. Activarlo
 ----------------------------------------
 venv\Scripts\activate
@@ -35,9 +37,9 @@ python app.py
 Se obtiene como resultado: http://127.0.0.1:5000/
 
 
-# -------------------------------------------------------------------------------------------
-#                                           ENDPOINTS
-# -------------------------------------------------------------------------------------------
+# -----------
+#  ENDPOINTS
+# -----------
 # Usuarios
 # --------
 - GET /users: 
