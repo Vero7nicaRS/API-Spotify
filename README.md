@@ -14,11 +14,11 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # INSTALACIÓN
 # -----------
 
-1. Crear un entorno virtual (recomendado)
+1) Crear un entorno virtual (recomendado)
 
 python -m venv venv
 
-2. Activarlo
+2) Activarlo
 
 venv\Scripts\activate
 
@@ -87,6 +87,7 @@ Obtiene la lista de cantantes favoritos del usuario.
 - POST /users/{id}/cantantes_favoritos
 
 Añade uno o varios cantantes favoritos al usuario.
+
 Se requiere de autorización para añadir cantantes favoritos a un usuario.
     
     Headers:
@@ -97,8 +98,9 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 
 - PUT /users/{id}/cantantes_favoritos
 
-    Reemplaza completamente la lista de cantantes favoritos del usuario.
-    Se requiere de autorización para realizar la modificación de los cantantes favoritos de un usuario.
+  Reemplaza completamente la lista de cantantes favoritos del usuario.
+
+  Se requiere de autorización para realizar la modificación de los cantantes favoritos de un usuario.
 
     Headers:
         Authorization: 1234
@@ -108,8 +110,9 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 
 - DELETE /users/{id}/cantantes_favoritos
 
-    Elimina un cantante favorito concreto del usuario.
-    Se requiere de autorización para realizar la eliminación de los cantantes favoritos de un usuario.
+  Elimina un cantante favorito concreto del usuario.
+
+  Se requiere de autorización para realizar la eliminación de los cantantes favoritos de un usuario.
 
     Headers:
         Authorization: 1234
@@ -126,12 +129,13 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
 - GET /users/{id}/canciones_favoritas
   
-    Obtiene la lista de canciones favoritas del usuario.
+  Obtiene la lista de canciones favoritas del usuario.
 
 - POST /users/{id}/canciones_favoritas
   
-    Añade una o varias canciones favoritas al usuario.
-    Se requiere de autorización para añadir canciones favoritas a un usuario.
+  Añade una o varias canciones favoritas al usuario.
+
+  Se requiere de autorización para añadir canciones favoritas a un usuario.
 
     Headers:
         Authorization: 1234
@@ -141,8 +145,9 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
 - PUT /users/{id}/canciones_favoritas
     
-    Reemplaza completamente las canciones favoritas del usuario.
-    Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
+  Reemplaza completamente las canciones favoritas del usuario.
+
+  Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
     
     Headers:
         Authorization: 1234
@@ -152,8 +157,9 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
 - DELETE /users/{id}/canciones_favoritas
     
-    Elimina una canción favorita concreta del usuario.
-    Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
+  Elimina una canción favorita concreta del usuario.
+
+  Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
     
     Headers:
         Authorization: 1234
@@ -167,11 +173,13 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
 - GET /users/{id}/artistas_spotify
 
-    Obtiene información de Spotify acerca de los cantantes favoritos del usuario.
-    La llamada a la API de Spotify se realiza con “search_artist()”.
+  Obtiene información de Spotify acerca de los cantantes favoritos del usuario.
+
+  La llamada a la API de Spotify se realiza con “search_artist()”.
 
 - GET /users/{id}/canciones_spotify
 
-    Obtiene información de Spotify acerca de las canciones favoritas del usuario.
-    La llamada a la API de Spotify se realiza con “search_artist()”.
+  Obtiene información de Spotify acerca de las canciones favoritas del usuario.
+
+  La llamada a la API de Spotify se realiza con “search_artist()”.
  
