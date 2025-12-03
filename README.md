@@ -165,13 +165,11 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
   Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
     
-    Headers:
-  
-        Authorization: 1234
+    	Headers:
+        	Authorization: 1234
 
-    Query params:
-  
-        cancion: nombre de la canción (obligatorio)
+    	Query params:
+       	 	cancion: nombre de la canción (obligatorio)
 
 # -----------------------
 # Integración con spotify
