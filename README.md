@@ -29,6 +29,7 @@ pip install -r requirements.txt
 4. Configurar variables de Spotify
 
 SPOTIFY_CLIENT_ID= ...
+
 SPOTIFY_CLIENT_SECRET= ...
 
 5. Ejecutarlo
