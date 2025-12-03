@@ -102,11 +102,11 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 
   Se requiere de autorización para realizar la modificación de los cantantes favoritos de un usuario.
 
-    Headers:
-        Authorization: 1234
-
-    Body:
-        cantantes_favoritos: lista de nombres (obligatorio)
+    	Headers:
+        	Authorization: 1234
+  
+    	Body:
+        	cantantes_favoritos: lista de nombres (obligatorio)
 
 - DELETE /users/{id}/cantantes_favoritos
 
@@ -114,11 +114,11 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 
   Se requiere de autorización para realizar la eliminación de los cantantes favoritos de un usuario.
 
-    Headers:
-        Authorization: 1234
+    	Headers:
+        	Authorization: 1234
 
-    Query params:
-        cantante: nombre del cantante (obligatorio)
+    	Query params:
+        	cantante: nombre del cantante (obligatorio)
 
 
 # -------------------
@@ -137,12 +137,10 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
   Se requiere de autorización para añadir canciones favoritas a un usuario.
 
-    Headers:
-  
-        Authorization: 1234
-    Body:
-  
-        canciones_favoritas: lista de nombres (obligatorio)
+    	Headers:
+        	Authorization: 1234
+    	Body:
+        	canciones_favoritas: lista de nombres (obligatorio)
 
 
 - PUT /users/{id}/canciones_favoritas
@@ -151,13 +149,11 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 
   Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
     
-    Headers:
-  
-        Authorization: 1234
+    	Headers:
+        	Authorization: 1234
 
-    Body:
-  
-        canciones_favoritas: lista de nombres (obligatorio)
+    	Body:
+        	canciones_favoritas: lista de nombres (obligatorio)
 
 - DELETE /users/{id}/canciones_favoritas
     
