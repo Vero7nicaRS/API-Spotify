@@ -14,11 +14,11 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # INSTALACIÓN
 # -----------
 
-1) Crear un entorno virtual (recomendado)
+1. Crear un entorno virtual (recomendado)
 
 python -m venv venv
 
-2) Activarlo
+2. Activarlo
 
 venv\Scripts\activate
 
@@ -138,8 +138,10 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
   Se requiere de autorización para añadir canciones favoritas a un usuario.
 
     Headers:
+  
         Authorization: 1234
     Body:
+  
         canciones_favoritas: lista de nombres (obligatorio)
 
 
@@ -150,9 +152,11 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
   Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
     
     Headers:
+  
         Authorization: 1234
 
     Body:
+  
         canciones_favoritas: lista de nombres (obligatorio)
 
 - DELETE /users/{id}/canciones_favoritas
@@ -162,9 +166,11 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
   Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
     
     Headers:
+  
         Authorization: 1234
 
     Query params:
+  
         cancion: nombre de la canción (obligatorio)
 
 # -----------------------
