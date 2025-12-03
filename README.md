@@ -59,7 +59,7 @@ Crea uno o varios usuarios.
 - PUT /users/<id>
 
 Modifica el nombre del usuario existente.
-Se requiere de autorización para realizar la modificación   del usuario.
+Se requiere de autorización para realizar la modificación del usuario.
 
     Headers:
 	    Authorization: 1234
@@ -76,13 +76,13 @@ Elimina un usuario por ID.
  
 # Cantantes favoritos
 # -------------------
-Ruta de cantantes favoritos de un determinado usuario: /users/<id>cantantes_favoritos
+Ruta de cantantes favoritos de un determinado usuario: /users/{id}cantantes_favoritos
 
-- GET /users/<id>/cantantes_favoritos
+- GET /users/{id}/cantantes_favoritos
 
 Obtiene la lista de cantantes favoritos del usuario.
 
-- POST /users/<id>/cantantes_favoritos
+- POST /users/{id}/cantantes_favoritos
 
 Añade uno o varios cantantes favoritos al usuario.
 Se requiere de autorización para añadir cantantes favoritos a un usuario.
@@ -93,7 +93,7 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
     Body:
         cantantes_favoritos: lista de nombres (obligatorio)
 
-- PUT /users/<id>/cantantes_favoritos
+- PUT /users/{id}/cantantes_favoritos
 
     Reemplaza completamente la lista de cantantes favoritos del usuario.
     Se requiere de autorización para realizar la modificación de los cantantes favoritos de un usuario.
@@ -104,7 +104,7 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
     Body:
         cantantes_favoritos: lista de nombres (obligatorio)
 
-- DELETE /users/<id>/cantantes_favoritos
+- DELETE /users/{id}/cantantes_favoritos
 
     Elimina un cantante favorito concreto del usuario.
     Se requiere de autorización para realizar la eliminación de los cantantes favoritos de un usuario.
@@ -120,12 +120,12 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 # Canciones favoritas
 # -------------------
 
-Ruta de canciones favoritas de un determinado usuario: /users/<id>/canciones_favoritas
+Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_favoritas
 
-- GET /users/<id>/canciones_favoritas
+- GET /users/{id}/canciones_favoritas
     Obtiene la lista de canciones favoritas del usuario.
 
-- POST /users/<id>/canciones_favoritas
+- POST /users/{id}/canciones_favoritas
     Añade una o varias canciones favoritas al usuario.
     Se requiere de autorización para añadir canciones favoritas a un usuario.
 
@@ -135,19 +135,22 @@ Ruta de canciones favoritas de un determinado usuario: /users/<id>/canciones_fav
         canciones_favoritas: lista de nombres (obligatorio)
 
 
-- PUT /users/<id>/canciones_favoritas
+- PUT /users/{id}/canciones_favoritas
     
     Reemplaza completamente las canciones favoritas del usuario.
+    
     Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
     
     Headers:
         Authorization: 1234
+
     Body:
         canciones_favoritas: lista de nombres (obligatorio)
 
-- DELETE /users/<id>/canciones_favoritas
+- DELETE /users/{id}/canciones_favoritas
     
     Elimina una canción favorita concreta del usuario.
+
     Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
     
     Headers:
@@ -160,12 +163,12 @@ Ruta de canciones favoritas de un determinado usuario: /users/<id>/canciones_fav
 # Integración con spotify
 # -----------------------
 
-- GET /users/<id>/artistas_spotify
+- GET /users/{id}/artistas_spotify
 
     Obtiene información de Spotify acerca de los cantantes favoritos del usuario.
     La llamada a la API de Spotify se realiza con “search_artist()”.
 
-- GET /users/<id>/canciones_spotify
+- GET /users/{id}/canciones_spotify
 
     Obtiene información de Spotify acerca de las canciones favoritas del usuario.
     La llamada a la API de Spotify se realiza con “search_artist()”.
