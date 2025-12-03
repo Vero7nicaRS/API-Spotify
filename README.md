@@ -45,20 +45,26 @@ Obtiene la lista de todos los usuarios.
 - POST /users
     
 Crea uno o varios usuarios.
+    
     Body:
-    	users: lista de objetos con el campo:
+    	
+        users: lista de objetos con el campo:
+        
             nombre (string, obligatorio)
 
 - PUT /users/<id>
-    Modifica el nombre del usuario existente.
-    Se requiere de autorización para realizar la modificación   del usuario.
+
+Modifica el nombre del usuario existente.
+Se requiere de autorización para realizar la modificación   del usuario.
+
     Headers:
 	    Authorization: 1234
     Body:
         nombre (string, obligatorio)
 
 - DELETE /users
-    Elimina un usuario por ID.
+
+Elimina un usuario por ID.
     Query params:
         id (entero, obligatorio)
 
@@ -69,11 +75,13 @@ Crea uno o varios usuarios.
 Ruta de cantantes favoritos de un determinado usuario: /users/<id>cantantes_favoritos
 
 - GET /users/<id>/cantantes_favoritos
-    Obtiene la lista de cantantes favoritos del usuario.
+
+Obtiene la lista de cantantes favoritos del usuario.
 
 - POST /users/<id>/cantantes_favoritos
-    Añade uno o varios cantantes favoritos al usuario.
-    Se requiere de autorización para añadir cantantes favoritos a un usuario.
+
+Añade uno o varios cantantes favoritos al usuario.
+Se requiere de autorización para añadir cantantes favoritos a un usuario.
     Headers:
         Authorization: 1234
     Body:
