@@ -15,7 +15,6 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # -----------
 
 1. Crear un entorno virtual (recomendado)
-----------------------------------------
 python -m venv venv
 
 2. Activarlo
@@ -138,7 +137,6 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 - PUT /users/{id}/canciones_favoritas
     
     Reemplaza completamente las canciones favoritas del usuario.
-    
     Se requiere de autorización para realizar la modificación de las canciones favoritas de un usuario.
     
     Headers:
@@ -150,7 +148,6 @@ Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_fav
 - DELETE /users/{id}/canciones_favoritas
     
     Elimina una canción favorita concreta del usuario.
-
     Se requiere de autorización para realizar la eliminación de las canciones favoritas de un usuario.
     
     Headers:
