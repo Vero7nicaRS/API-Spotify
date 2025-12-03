@@ -11,27 +11,26 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # -------------------------------------------------------------------------------------------
 #                                           INSTALACIÓN
 # -------------------------------------------------------------------------------------------
-# 1. Crear un entorno virtual (recomendado)
-# ---------------------------
+1. Crear un entorno virtual (recomendado)
+----------------------------------------
 python -m venv venv
-# 2. Activarlo
-# ------------
+2. Activarlo
+----------------------------------------
 venv\Scripts\activate
 
-# 3. Instalar dependencias
-# -------------------------
+3. Instalar dependencias
+----------------------------------------
 pip install -r requirements.txt
 
-# 4. Configurar variables de Spotify 
-# ------------------------------------
+4. Configurar variables de Spotify 
+----------------------------------------
 SPOTIFY_CLIENT_ID= ...
 SPOTIFY_CLIENT_SECRET= ...
 
-# 5. Ejecutarlo
-# -------------
+5. Ejecutarlo
+----------------------------------------
 python app.py
-
-# Se obtiene como resultado: http://127.0.0.1:5000/
+Se obtiene como resultado: http://127.0.0.1:5000/
 
 
 # -------------------------------------------------------------------------------------------
@@ -39,10 +38,13 @@ python app.py
 # -------------------------------------------------------------------------------------------
 # Usuarios
 # --------
-- GET /users
+- GET /users: 
+
 Obtiene la lista de todos los usuarios.
+
 - POST /users
-    Crea uno o varios usuarios.
+    
+Crea uno o varios usuarios.
     Body:
     	users: lista de objetos con el campo:
             nombre (string, obligatorio)
