@@ -15,25 +15,28 @@ Este proyecto se ha implementando utilizando Flask, Python y MySQL.
 # -----------
 
 1. Crear un entorno virtual (recomendado)
+----------------------------------------
 python -m venv venv
-----------------------------------------
-2. Activarlo
 
+3. Activarlo
+----------------------------------------
 venv\Scripts\activate
-----------------------------------------
-3. Instalar dependencias
 
-pip install -r requirements.txt
+3. Instalar dependencias
 ----------------------------------------
+pip install -r requirements.txt
+
 4. Configurar variables de Spotify
-   
+----------------------------------------
 SPOTIFY_CLIENT_ID= ...
 SPOTIFY_CLIENT_SECRET= ...
-----------------------------------------
+
 5. Ejecutarlo
-   
+----------------------------------------  
 python app.py
+
 Se obtiene como resultado: http://127.0.0.1:5000/
+
 ----------------------------------------
 
 # -----------
@@ -122,9 +125,11 @@ Se requiere de autorización para añadir cantantes favoritos a un usuario.
 Ruta de canciones favoritas de un determinado usuario: /users/{id}/canciones_favoritas
 
 - GET /users/{id}/canciones_favoritas
+  
     Obtiene la lista de canciones favoritas del usuario.
 
 - POST /users/{id}/canciones_favoritas
+  
     Añade una o varias canciones favoritas al usuario.
     Se requiere de autorización para añadir canciones favoritas a un usuario.
 
